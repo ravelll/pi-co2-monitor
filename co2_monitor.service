@@ -1,0 +1,10 @@
+[Unit]
+Description = CO2 Monitor Service
+
+[Service]
+ExecStart = /home/pi/dev/co2_monitor/app
+Restart = always
+Type = simple
+
+[Install]
+WantedBy = multi-user.target
